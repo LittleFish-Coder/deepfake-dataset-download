@@ -16,7 +16,16 @@ else
     echo "gdown is already installed"
 fi
 
+# Check if FILE_NAME already exists
+if [ -f $FILE_NAME ]; then
+    echo "$FILE_NAME already exists"
+    exit 0
+fi
+
 # Download the dataset
 echo "Downloading Celeb-DF(v2) dataset..."
 gdown $FILE_ID -O $FILE_NAME
 
+# unzip the dataset
+echo "Unzipping $FILE_NAME..."
+unzip -q $FILE_NAME
