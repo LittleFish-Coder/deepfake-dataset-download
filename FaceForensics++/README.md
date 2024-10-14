@@ -3,7 +3,7 @@
 Run the following command to download the dataset in the background:
 
 ```bash
-echo | nohup bash download_ffpp_batch.sh &
+nohup bash download_ffpp_batch.sh &
 ```
 
 or directly download the dataset from official python script:
