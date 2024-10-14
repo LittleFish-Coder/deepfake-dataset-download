@@ -12,6 +12,15 @@ or directly download the dataset from official python script:
 python faceforensics_download_v4.py ./ -d original -c c23 -t videos --server EU2
 ```
 
+## Subdatasets to download
+In FF++ paper, the below subdatasets are used (Must be downloaded):
+
+`original`, `Deepfakes`, `Face2Face`, `FaceSwap`, `NeuralTextures`
+
+but there exists more subdatasets in the dataset (optional):
+
+`DeepFakeDetection_original`, `DeepFakeDetection`, `FaceShifter`
+
 ## Arguments
 - `-h:` help
 - `-d:` dataset version ['original', 'DeepFakeDetection_original', 'Deepfakes', 'DeepFakeDetection', 'Face2Face', 'FaceShifter', 'FaceSwap', 'NeuralTextures']
